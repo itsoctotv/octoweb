@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet"/> 
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>octoweb</title>
+    <style type="text/css">
+        body{
+            font-family:'Fira Mono';
+            font-size: larger;
+            overflow: hidden;
+            background-color: #2d2d2d;
+        }
+        .container{
+    
+            width: 100%;
+            height: auto;
+            background: #2d2d2d;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            flex-flow: wrap;
+
+
+ 
+        }
+        @media screen and (max-width: 1200px){
+            .box{
+                width:  30%;
+            }
+        }
+        @media screen and (max-width:  600px){
+            .box{
+                width: 30%;
+            }
+        }
+        .box{
+            width: 350px;
+            height: 175px;
+            background: transparent;
+            box-sizing: border-box;
+            font-size: large;
+
+        }
+        .blink{
+            font-family:'Fira Mono';
+            font-size: normal;
+            animation: blinker 1500ms steps(2,start) infinite;
+            
+            background-color: #2d2d2d;
+        }
+        @keyframes blinker {
+            to {
+                visibility: hidden;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <span style="color: #13c21c;">root@octoweb</span><span style="color: #FFFFFF;">:</span><span style="color: #056cd3;">~</span><span style="color: #FFFFFF;">$ neofetch</span>
+<div class="container">
+    <div class="box">
+        <pre style="color: #FFF">
+ ▒█████    ▄████▄ ▄▄▄█████▓ ▒█████          
+▒██▒  ██▒ ▒██▀ ▀█ ▓  ██▒ ▓▒▒██▒  ██▒        
+▒██░  ██▒ ▒▓█    ▄▒ ▓██░ ▒░▒██░  ██▒        
+▒██   ██░▒▒▓▓▄ ▄██░ ▓██▓ ░ ▒██   ██░        
+░ ████▓▒░░▒ ▓███▀   ▒██▒ ░ ░ ████▓▒░        
+░ ▒░▒░▒░ ░░ ░▒ ▒    ▒ ░░   ░ ▒░▒░▒░         
+  ░ ▒ ▒░    ░  ▒      ░      ░ ▒ ▒░         
+░ ░ ░ ▒   ░         ░      ░ ░ ░ ▒
+        </pre>
+    </div>
+    <div class="box">
+            <pre style="color: #FFF">
+root@octoweb
+------------
+admin: octo
+------------
+<a href="https://twitter.com/itsoctotv" style="color: #FFF;" target="_blank">twitter</a>         <a href="https://discord.com/invite/hFTj4GXFNa" style="color: #FFF;" target="_blank">discord</a>
+<a href="https://www.instagram.com/itsoctotv/" style="color: #FFF" target="_blank">instagram</a>       <a href="https://www.youtube.com/channel/UCdfYbM86O9vwaTu1HWF2icw" style="color: #FFF" target="_blank">youtube</a>
+<a href="https://www.twitch.tv/itsoctotv" style="color: #FFF;" target="_blank">twitch</a>          <a href="https://steamcommunity.com/id/octotv/" style="color: #FFF;" target="_blank">steam</a>
+<a href="https://github.com/octo404" style="color: #FFF;" target="_blank">github</a>          <a href="https://itsoctotv.com/watermelons.html" style="color: #FFF" target="_blank">watermelons!</a></pre>
+    </div>
+    
+</div><span style="color: #13c21c;">root@octoweb</span><span style="color: #FFFFFF;">:</span><span style="color: #056cd3;">~</span><span style="color: #FFFFFF;">$ </span><span style="color:#FFF" class="blink">█</span>
+    
+</body>
+
+
+
+</html>
