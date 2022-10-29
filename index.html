@@ -1,45 +1,31 @@
+<!-- made by octo; last edited: 10/29/22; available on github.com/octo404 -->
 <!DOCTYPE html>
 <html lang="en">
-<!-- made by octo; last edited: 10/29/22 -->
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet"/> 
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet"/>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <title>octoweb</title>
     <style type="text/css">
         body{
-            font-family:'Fira Mono', sans-serif;
+            font-family: 'Fira Mono';
             font-size: 16px;
             overflow: hidden;
             background-color: #2d2d2d;
             font-weight: bold;
-            margin:5px;
+            margin: 5px;
         }
         .container{
             width: 100%;
             height: auto;
             background: transparent;
-
             display: flex;
             flex-direction: row;
             justify-content: left;
             flex-flow: wrap;
-            margin:10px;
-
-
- 
-        }
-       
-        .box{
-            width: 350px;
-            height: 175px;
-            background: transparent;
-            box-sizing: border-box;
-            margin: 10px;
-
         }
         .box1{
             width: 450px;
@@ -47,39 +33,50 @@
             background: transparent;
             box-sizing: border-box;
             margin: 10px;
+            padding-top: 15px;
+        }
+        .box2{
+            width: 350px;
+            height: 175px;
+            background: transparent;
+            box-sizing: border-box;
+            margin: 10px;
             
+        }
+        pre{
+            color: #FFF;
+            font-size:16px;
+            font-family:'Fira Mono';
+            font-weight: bold;
         }
         .blink{
-	    
             font-size: 16px;
-            animation: blinker 1500ms steps(2,start) infinite;
-            
+            animation: blinker 1500ms steps(2, start) infinite;
             background-color: transparent;
+            color:#FFF;
         }
         @keyframes blinker {
-            to {
+            to{
                 visibility: hidden;
             }
         }
-        
     </style>
 </head>
 <body>
-    
-    <span style="color: #13c21c;">root@octoweb</span><span style="color: #FFFFFF;">:</span><span style="color: #056cd3;">~</span><span style="color: #FFFFFF;">$ neofetch</span>
-<div class="container">
-    <div class="box1">
-	<pre style="color: #FFF;font-size:16px;font-weight:bold;font-family: 'Fira Mono';margin-top: 0px;margin-bottom: 0px;">
+    <span style="color: #13c21c;">root@octoweb</span><span style="color: #FFF;">:</span><span style="color: #056cd3;">~</span><span style="color: #FFF;">$ neofetch</span>
+    <div class="container">
+        <div class="box1">
+            <pre style="margin-top: 0px; margin-bottom: 0px;">
   ______     ______  ___________   ______   
  /  __  \   /      ||           | /  __  \  
 |  |  |  | |  ,----'`---|  |----`|  |  |  | 
 |  |  |  | |  |         |  |     |  |  |  | 
 |  `--'  | |  `----.    |  |     |  `--'  | 
  \______/   \______|    |__|      \______/  
-</pre>
-    </div>
-    <div class="box">
-            <pre style="color: #FFF;font-size:16px; font-family:'Fira Mono';margin-top: 0px;margin-bottom: 0px;">
+            </pre>
+        </div>
+        <div class="box2">
+            <pre style="margin-top: 0px; margin-bottom: 0px;">
 root@octoweb
 ------------
 admin: octo 
@@ -88,13 +85,8 @@ admin: octo
 <a href="https://www.instagram.com/itsoctotv/" style="color: #FFF" target="_blank">instagram</a>       <a href="https://www.youtube.com/channel/UCdfYbM86O9vwaTu1HWF2icw" style="color: #FFF" target="_blank">youtube</a>
 <a href="https://www.twitch.tv/itsoctotv" style="color: #FFF;" target="_blank">twitch</a>          <a href="https://steamcommunity.com/id/octotv/" style="color: #FFF;" target="_blank">steam</a>
 <a href="https://github.com/octo404" style="color: #FFF;" target="_blank">github</a>          <a href="https://itsoctotv.com/watermelons.html" style="color: #FFF" target="_blank">watermelons!</a></pre>
-      </div>
-    
-</div>
-<span style="color: #13c21c;">root@octoweb</span><span style="color: #FFFFFF;">:</span><span style="color: #056cd3;">~</span><span style="color: #FFFFFF;">$ </span><span style="color:#FFF;font-size: 16px;" class="blink">&#9610;</span>
-    
+        </div>
+    </div>
+    <span style="color: #13c21c;">root@octoweb</span><span style="color: #FFF;">:</span><span style="color: #056cd3;">~</span><span style="color: #FFF;">$ </span><span class="blink">&#9610;</span>
 </body>
-
-
-
 </html>
