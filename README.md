@@ -1,4 +1,4 @@
 # octoweb
 the main website!
 
-available at https://itsoctotv.com/
+available at https://octocodes.dev/
