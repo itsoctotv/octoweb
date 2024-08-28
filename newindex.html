@@ -1,0 +1,507 @@
+<!-- made by octo; last edited: 08/28/23; available on github.com/itsoctotv -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>octoweb</title>
+    <style type="text/css">
+	
+        body{
+            font-family: 'JetBrains Mono';
+            font-size: 18px;
+            overflow: hidden;
+            background-color: #282a36;
+            font-weight: 900;
+            margin: 5px;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+            background: transparent;
+            flex-direction: row;
+            justify-content: left;
+            flex-flow: wrap;
+            display: none;
+        }
+        .container2 {
+            width: 100%;
+            height: auto;
+            background: transparent;
+            flex-direction: row;
+            justify-content: left;
+            flex-flow: wrap;
+            display: none;
+        	
+        }
+        
+        .box1{
+            width: 370px;
+            height: 270px;
+            background: transparent;
+            box-sizing: border-box;
+            margin: 10px;
+            //padding-top: 15px;
+            
+            
+        }
+        
+        .box2{
+            width: 350px;
+            height: 200px;
+            background: transparent;
+            box-sizing: border-box;
+            margin: 10px;
+            
+        }
+        .box3{
+            width: 210px;
+            height: 170px;
+            background: transparent;
+            box-sizing: border-box;
+            margin: 10px;
+            //padding-top: 15px;
+            display: inline;        	
+        }
+        .box4{
+        	width: 220px;
+            height: 170px;
+            background: transparent;
+            box-sizing: border-box;
+            margin: 10px;
+            display: inline;
+            background-color: #282a36;
+        	color: #F3F99D;
+
+        }
+        pre{
+            color: #FFF;
+            font-size:18px;
+            font-family:'Jetbrains Mono';
+            font-weight: 900;
+        }
+        .blink {
+            color: #FFF;
+        }
+      
+        /*@keyframes blinker {
+            from { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            to { opacity: 1.0; }
+        }*/
+		.watermelon {
+			width: 80px;
+            height: 80px;
+            background-image: url('watermelon.png');
+            background-size: cover;
+            float: left;
+            margin-right: 8px;
+        }
+        .watermelon:hover {
+        	background-image: url('watermelon_color.png');
+        }
+		.octobot {
+			width: 80px;
+            height: 80px;
+            background-image: url('robot.png');
+            background-size: cover;
+            float: left;
+            margin-right: 8px;
+        }
+        .octobot:hover {
+        	background-image: url('robot_color.png');
+        }
+
+		.server {
+			width: 80px;
+            height: 80px;
+            background-image: url('server.png');
+            background-size: cover;
+            float: left;
+            margin-right: 8px;
+        }
+        .server:hover {
+        	background-image: url('server_color.png');
+        }
+		.radio {
+			width: 80px;
+            height: 80px;
+            background-image: url('radio.png');
+            background-size: cover;
+            float: left;
+            margin-right: 8px;
+        }
+        .radio:hover {
+        	background-image: url('radio_color.png');
+        }
+
+        .github {
+            width: 40px;
+            height: 40px;
+            background-image: url('github.png');
+            background-size: cover;
+            float: left;
+            margin-right: 8px;
+        }
+        .github:hover {
+            background-image: url('github_color.png');
+        }
+
+        .reddit {
+            width: 40px;
+            height: 40px;
+            background-image: url('reddit.png');
+            background-size: cover;
+            float: left; 
+            margin-right: 8px;
+                              
+        }
+        .reddit:hover{
+            background-image: url('reddit_color.png');
+        }
+
+        .twitter {
+            width: 40px;
+            height: 40px;
+            background-image: url('twitter.png');
+            background-size: cover;
+            float: left;   
+            margin-right: 8px;
+                      
+        }
+        .twitter:hover{
+            background-image: url('twitter_color.png');
+        }
+        
+        .cursor {
+            display: none;
+            color: #FFF;
+        }
+        .cursor2 {
+            display: none;
+            color: #FFF;
+        }
+        button {
+        	font-family: 'JetBrains Mono';
+            font-size: 18px;
+            overflow: hidden;
+            background-color: #282a36;
+        	color: #F3F99D;
+            font-weight: 900;
+        	border: none;
+        	text-decoration: underline;
+        	cursor: default;
+        
+        }
+        button:hover {
+        	background-color: #F3F99D;
+        	color: #282a36;
+        	cursor: pointer;
+
+
+        }
+    </style>
+</head>
+<body onload="setTimeout(typeNeofetch, 800);blinker(blink, 700, 3);showMainAfterDelay(container, 2700);showCursorAfterDelay(cursor, 2770);blinker(blink2, 700, -1);">
+    <div id="neofetchDiv"><span style="color: #57C7FF;" id="path">~ </span>
+	
+    <span style="color: #5AF78E;"><br>> </span><span style="color: #FFF;"></span><span style="color: #FFF;" id="neofetch"></span><span class="blink" id="blink">&#9610;</span></div>
+    <div id=container class="container">
+        <div class="box1">
+            <pre style="margin-top: 0px; margin-bottom: 0px;font-size:6px;line-height: 6px;">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣰⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠁⣠⣶⣦⡀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⢀⣴⣿⣿⣿⣿⣄⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⢉⣁⣠⣴⣿⣿⣿⣿⣿⣿⣿⣧⡀⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠉⣀⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣤⣄⣈⡉⠙⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠉⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣄⣈⠉⠛⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⠟⠋⣀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣄⡉⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⠟⠋⢀⣠⣤⣤⣀⠈⠻⡿⠟⠁⠀⠐⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣀⡉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠛⠋⠁⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⠁⢀⣶⣿⣿⣿⣿⣿⣷⣄⠀⠀⢀⠀⠀⠀⠀⠀⠀⠉⠉⠙⠛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡈⠛⠿⠟⠋⣀⣤⣶⣿⣿⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⡇⠀⣿⣿⣿⣿⣿⣿⣏⣿⣿⣷⣄⠈⠃⠀⠀⠀⠀⠀⠀⠀⠀⢠⣤⠀⠀⠀⠉⠙⠛⠛⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⣴⣿⣿⣿⣿⣿⣿⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⡇⠀⣿⣿⣿⣿⠛⢻⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⣤⣄⠾⢿⠈⢡⣤⡜⠿⠃⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢘⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣇⠀⣿⣿⣿⣿⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠈⠃⠀⠸⠿⠈⠉⠀⠀⠀⢀⢀⣤⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠛⠛⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⢻⣿⣿⡀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣤⣄⣀⣀⠀⠀⣤⣄⠈⠛⠛⠋⠙⢿⣿⣃⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⡀⠀⠈⠉⠙⠛⠻⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠈⠻⠿⠇⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣄⣈⠉⣀⠀⠀⠀⠀⢀⣀⠰⠿⠞⠛⣣⣀⠾⠿⠀⠀⠀⣀⣀⣀⠉⠙⠛⠛⣿⣿⣿⣿⣿⣿⣿⣿⠇⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠉⠉⠛⠻⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣀⠀⠀⠈⠛⠀⠀⢷⠆⠉⠁⠀⣀⣀⣶⣶⣿⣿⣿⣿⣿⣶⣦⠘⠿⠿⢿⣿⣿⣿⠟⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣷⣶⣶⣤⣄⣀⣀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣄⣀⠀⢀⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣤⣾⣿⣿⣿⣇⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣦⣤⣄⣀⡀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣄⣀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿
+⢀⡼⠀⢠⣿⣿⠟⠁⣾⠟⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣀⣀⡀⠀⠀⠀⠀⠈⠉⠙⠛⠻⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠈⣿⣿⣿⣿⣿⣿⣿⣿
+⣼⡇⠀⣿⣿⣿⠀⣰⡿⠀⢸⣿⣿⡏⠁⣿⠟⠛⣿⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⣄⣀⠀⠀⠀⠀⠀⠉⠉⠛⠻⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠸⣿⣿⣿⣿⣿⣿⣿
+⣿⠀⢸⣿⣿⡇⢀⣿⡇⢀⣿⣿⣿⠀⢸⡿⠀⣾⡟⠀⣿⣿⣿⠋⢹⣿⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⣀⡀⠀⠀⠀⠀⠈⠉⠉⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⢻⣿⣿⣿⣿⣿⣿
+⡏⠀⣿⣿⣿⠃⢸⣿⠁⣸⣿⣿⡇⠀⣿⠇⠀⣿⡇⢸⣿⣿⡿⠀⣿⡿⠀⣾⣿⣿⠃⢸⣿⠋⢿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⡀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠻⣿⣿⣿⡄⠘⣿⣿⣿⣿⣿⣿
+⠁⠰⣿⣿⡿⠀⣾⡿⠀⣿⣿⣿⠁⠀⠟⠀⢸⡿⠀⣼⣿⣿⠇⢰⣿⠃⢠⣿⣿⡟⠀⣾⡟⠀⣿⡇⢰⣿⣿⣿⠉⣹⡿⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⠀⠀⠀⠉⠉⠁⠀⠛⠿⣿⣿⣿⣿
+⠀⠀⠀⠈⠀⠀⠛⠃⠐⠿⣿⡟⠀⣿⡆⢀⣾⠇⢀⣿⣿⡿⠀⣾⣿⠀⣾⣿⣿⠃⢰⣿⠁⢸⣿⠁⣼⣿⣿⡏⢀⣿⡇⢀⣿⣿⣿⠁⢸⣿⠉⣿⡿⢿⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⠛⠁⣠⣶⣶⣦⣤⣄⣀⣀⠀⠀⠀⠀⠉⠉
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠈⠛⠀⢸⣿⣿⠇⢠⣿⡇⢰⣿⣿⣿⠀⣾⡏⠀⣿⡟⢀⣿⣿⣿⠃⢸⣿⠀⣸⣿⣿⡏⠀⣿⡏⢠⣿⠇⢰⣿⣿⡟⠉⢀⠘⢿⣿⣿⣿⣿⣿⠟⠁⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⢠⣿⣷
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠀⠸⠿⣿⠇⢠⣿⠇⢸⣿⠁⢸⣿⣿⡟⠀⣿⡏⢀⣿⣿⣿⠁⣸⣿⠁⢸⣿⠀⣾⣿⣿⡇⢠⣿⠀⠈⠉⠛⠋⠉⢠⡄⠐⣿⡟⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣸⣿⣿
+⠀⠀⠀⠀⢀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠚⠋⠀⢿⣿⣿⠁⢸⣿⠃⢸⣿⣿⡟⠀⣿⡇⠀⣿⡇⢠⣿⣿⣿⠀⣼⡿⠀⣼⣿⣿⠆⢠⣿⠇⢸⣿⠁⢰⣿⣿⡏⠀⣽⡟⠙⣿⡏⢠⣿⣿⣿
+⠀⠀⠀⠀⡀⠒⠈⠀⠄⠀⠂⠄⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣷⣶⣶⣦⣤⣄⡀⠀⠈⠋⠀⠻⠿⡿⠃⢸⣿⠀⣼⣿⠀⣼⣿⣿⠇⢠⣿⡇⢰⣿⣿⣿⠀⣾⡿⠀⣾⡟⠀⣿⣿⣿⠃⢸⣿⠁⢰⣿⠃⢸⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠤⢠⢀⡀⠀⠀⠀⠀⠘⠿⠿⢿⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠛⠃⠀⠿⢿⡿⠀⢸⡿⠀⣼⣿⣿⡇⢀⣿⠇⢠⣿⠃⢸⣿⣿⡟⠀⣿⡟⠀⣼⡟⠀⣿⣿⣿⣿
+⣿⣷⣶⣦⣤⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⠀⠠⢃⠊⣀⠭⠚⡑⣂⠦⠤⣀⣀⠀⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠛⠻⠟⠀⢸⡿⠀⣸⡏⠀⣸⣿⣿⠃⢰⣿⠃⢘⣿⠁⢠⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠐⠈⢀⠣⠓⠈⣠⠳⠘⣠⠫⠝⢚⡒⡴⠄⠀⣀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠐⠿⠿⠇⠀⣾⡿⠀⣾⡏⠀⣾⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣀⣀⡀⠀⠀⠐⠀⠄⠱⠀⠁⠠⠎⠑⢠⠝⠲⠈⡥⠜⠱⢈⠲⠔⠤⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠋⠁⢰⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣦⣤⣄⣀⣀⠀⠀⠀⠀⠈⠀⠑⠀⢀⠐⠂⠁⠀⠤⠓⡀⢤⠑⢀⢂⡆⠤⢄⠠⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠈⠀⠀⠌⠐⢀⠠⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠠⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣤⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣤⣤⣴⣿⣿⣿⣿⣿⣿⣿⣿
+⠹⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏
+            </pre>
+        </div>
+        
+        
+        
+        <div class="box2">
+            <pre style="margin-top: 0px; margin-bottom: 0px;">
+            
+<span style="color: #5AF78E;">root<span style="color: #FFF;">@</span><span style="color: #57C7FF;">octoweb</span>
+<span style="color: #FFF;">-------------</span>
+<span style="color: #5AF78E;">admin</span><span style="color: #FFF;">: </span><span style="color: #57C7FF;">octo</span>
+<span style="color: #FFF;">-------------</span>
+<a href="https://www.github.com/itsoctotv" target="_blank"><div class="github"></div></a><a href="https://www.reddit.com/user/itsoctotv/" target="_blank"><div class="reddit"></div></a><a href="https://x.com/itsoctotv/" target="_blank"><div class="twitter"></div></a>
+
+<button onclick="typeCd();">> show sites</button>
+
+
+
+        </div>
+        
+    </div>
+    <div id="container2" class="container2">
+    	<div class="box3">
+    	<a href="http://watermelons.octocodes.dev" target="_blank" class="watermelon"></a>
+    	<a href="http://bot.octocodes.dev" target="_blank" class="octobot"></a><br><br><br><br>
+    	<a href="http://852fm.octocodes.dev" target="_blank" class="radio"></a>
+    	<a href="http://mini.octocodes.dev" target="_blank" class="server"></a>
+    	</div>
+		<div class="box4"><br>
+		<span>here are some websites & services that i made!<br><br></span>
+		<button onclick="goBack();">> go back</button>
+		</div>
+	</div>      
+
+   <div id="cursor" class="cursor">
+   <span style="color: #57C7FF;" id="path">~ </span>
+   <span style="color: #5AF78E;"><br>> </span><span id="inputBegin"></span><span class="blink" id="blink2">&#9610;<br><br></span><span><br><br></span>
+   
+	</div>
+	<div id="cursor2" class="cursor2">
+	  <span style="color: #57C7FF;" id="pathdown">~ </span>
+	  <span style="color: #5AF78E;"><br>> </span><span id="inputBegin2"></span><span class="blink" id="blink3">&#9610;</span>
+	  
+		</div>
+ 	
+
+<script>
+var i = 0;
+
+var txt_neofetch = 'neofetch';
+var speed = 80; /* The speed/duration of the effect in milliseconds */
+function typeNeofetch() {
+
+    
+    if (i < txt_neofetch.length) {
+        document.getElementById("neofetch").innerHTML += txt_neofetch.charAt(i);
+        i++;
+        setTimeout(typeNeofetch, speed);    
+    }
+    
+
+    
+}
+var j2 = 0;
+var txt_cd = 'cd mysites/';
+function typeCd (){
+	if (j2 < txt_cd.length) {
+			
+	       document.getElementById("inputBegin").innerHTML += txt_cd.charAt(j2);
+
+	       j2++;
+	       setTimeout(typeCd, speed);   
+	       
+	         
+	   }	
+	if(j2 >= txt_cd.length){
+			document.getElementById("blink2").style.display = 'none';
+			setTimeout( function () {
+				document.getElementById("cursor2").style.display = 'inline';
+				document.getElementById("pathdown").innerHTML = '~/mysites';
+				blinker(blink3, 700, 8);
+				typeClear();
+			}, 200);
+			
+
+			//typeClear();
+
+			
+	}
+}
+var j = 0;
+var txt_clear = 'clear';
+
+function typeClear() {
+	
+	if (j < txt_clear.length) {
+	
+	       document.getElementById("inputBegin2").innerHTML += txt_clear.charAt(j);
+	       j++;
+	       setTimeout(typeClear, speed);   
+	       
+	         
+	   }
+	if(j >= txt_clear.length){
+		
+
+		setTimeout(function () {
+			
+			document.getElementById("container").style.display = 'none';
+			document.getElementById("neofetchDiv").style.display = 'none';
+			document.getElementById("cursor2").style.display = 'none';
+			document.getElementById("cursor").style.display = 'none';
+			document.getElementById("path").innerHTML = '~/mysites';
+			document.getElementById("inputBegin").innerHTML = '';
+		   document.getElementById("neofetch").innerHTML = '';
+			document.getElementById("neofetchDiv").style.display = 'inline';
+			
+
+
+
+
+
+		}, 600);
+		setTimeout(function () {
+
+			blinker(blink, 700, 1);
+			typeLs();
+			
+		}, 800);
+		
+
+		
+	}	
+	
+}
+
+var i2 = 0;
+var txt_ls = 'ls';
+function typeLs(){
+	
+	if (i2 < txt_ls.length) {
+		document.getElementById("inputBegin2").innerHTML += txt_ls.charAt(i2);
+		i2++;
+		setTimeout(typeLs, speed);   
+		       
+		         
+	}
+	if(i2 >= txt_ls.length){
+		setTimeout( function () {
+			document.getElementById("inputBegin").innerHTML = '';
+			
+			document.getElementById("neofetch").innerHTML = 'ls';
+
+			document.getElementById("neofetchDiv").style.display = 'inline';
+						
+			
+
+		}, 500);
+		setTimeout( function() {
+			displayContent();
+						
+		}, 1500);
+	}
+}
+function displayContent(){
+	//document.getElementById("cursor").style.display = 'inline';
+
+	document.getElementById("container2").style.display = 'flex';
+	setTimeout(function(){
+		document.getElementById("inputBegin2").innerHTML = '';
+		document.getElementById("cursor2").style.display = 'inline';
+
+		blinker(blink3, 700, -1);
+	}, 100);
+}
+
+var a = 0;
+var txt_reset = 'reset';
+
+function goBack(){
+
+	if (a < txt_reset.length) {
+		document.getElementById("inputBegin2").innerHTML += txt_reset.charAt(a);
+		a++;
+		setTimeout(goBack, speed);   
+		       
+		         
+	}
+	if(a >= txt_reset.length){
+		setTimeout(function(){
+			window.location.href='http://octocodes.dev';
+		}, 500);
+	}
+}
+
+function blinker(element, duration = 700, blinks = 5) {
+    let start = null;
+    let fadingOut = true;
+    let blinkCount = 0;
+
+    function animate(timestamp) {
+        if (!start) start = timestamp;
+        let progress = timestamp - start;
+        let halfDuration = duration / 2;
+
+        if (fadingOut) {
+            element.style.opacity = 1 - progress / halfDuration;
+        } else {
+            element.style.opacity = progress / halfDuration;
+        }
+
+        if (progress >= halfDuration) {
+            start = timestamp;
+            fadingOut = !fadingOut;
+            if (!fadingOut) {
+            	if(blinks != -1){
+					if (blinkCount >= blinks) {
+						element.style.opacity = 0; // Make element disappear
+					   return; // Stop the animation
+					}	
+               	}
+                blinkCount++;
+                
+            }
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+}
+
+function showMainAfterDelay(element, delay) {
+    setTimeout(() => {
+        element.style.display = 'flex';  // Change 'flex' to the appropriate display style for your element
+    }, delay);
+}
+
+function showCursorAfterDelay(element, delay) {
+    setTimeout(() => {
+        element.style.display = 'block';  // Change 'block' to the appropriate display style for your element
+    }, delay);
+}
+
+
+</script>
+</body>
+</html>
